@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="vertical-section" id="banner">
+            <div class="logo">
+                <img src="./footy.svg" alt="logo image">
+            </div>
+            <span>Photo by Photographer</span>
+        </div>
+        <div class="vertical-section">
+            <div class="hero-para">
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="form-container">
+                <legend>Let's do this!</legend>
+
+                <form action="/" method="get">
+                    <fieldset>
+                        <label for="firstName">FIRST NAME</label>
+                        <input id="firstName" name="firstName" type="text" required minlength="2">
+                        <label for="email">EMAIL</label>
+                        <input type="email" required placeholder="example@example.com" name="email" minlength="4">
+                        <label for="passwd">PASSWORD</label>
+                        <input type="password" required minlength="8">
+                    </fieldset>
+                    <fieldset>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" required minlength="2" name="lastName">
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" minlength="10" required id="phoneNumber" name="phone_number">
+                        <label for="confirmpasswd">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirmpasswd">
+                    </fieldset>
+
+                </form></div>
+            <div class="bottom">
+                <input type="submit" value="Create Account">
+                <span>Already have an account?<a href="#">Log in</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

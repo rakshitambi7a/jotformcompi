@@ -48,29 +48,35 @@ label{
     width: 100%;
     aspect-ratio:initial;
 }
+
 .vertical-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.bottom{
+#banner > span{
+    font-size: smaller;
+    color: white;
+    justify-self: center;
+
+}
+.container-section{
     display: flex;
     width: 100%;
-    padding: 0em 4em;
-    flex:1;
+    padding: 2em 4em;
     flex-direction: column;
+}
+.bottom{
     background-color: rgb(247, 247, 247);
     justify-content: center;
     gap: 2em;
+    flex:1;
     align-items:flex-start;
 }
 .hero-para{
-    padding: 2rem 4rem;
-    display: flex;
     background-color: rgb(246, 246, 246);
     gap: 3rem;
-    flex-direction: column;
     min-height: 33%;
     justify-content: end;
 }
@@ -90,12 +96,9 @@ fieldset{
     gap: 0.5rem;
 }
 .form-container{
-    display: flex;
-    padding: 2em 4em;
-    min-height: 33%;
     gap: 2em;
-    flex-direction: column;
     width: 100%;
+    min-height: 33%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 input{
@@ -111,4 +114,8 @@ input[type="email"]:invalid{
 }
 input:focus{
     box-shadow: 0px 0px 5px 0px rgba(4, 29, 154, 0.271) inset;
+}
+input[type="submit"]:hover{
+    background-color: rgb(55, 74, 49);
+    cursor: pointer;
 }
